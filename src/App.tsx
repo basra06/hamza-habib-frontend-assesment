@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css'
+import AutoComplete from './AutoComplete';
+ 
 function App() {
+ 
   return (
     <div className="App">
-      <form style={{margin:'20px'}}>
-        <div className='autocomplete' style={{width:'300px'}}>
-          <input id="myInput" type="text" name="myCountry" placeholder="Country"/>
-        </div>
-        <input type="submit"/>
-      </form>
+      <AutoComplete
+      id="autoComplete"
+      data={['Pakistan', 'India', 'Banglades', 'China', 'Australia', 'Canada']}
+  />
     </div>
   );
 }
